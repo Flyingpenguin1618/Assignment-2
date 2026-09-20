@@ -375,6 +375,7 @@
 451	common	cachestat		sys_cachestat
 452	common	fchmodat2		sys_fchmodat2
 453	64	map_shadow_stack	sys_map_shadow_stack
+454	common	custom_hello		sys_custom_hello
 
 #
 # Due to a historical design error, certain syscalls are numbered differently
@@ -420,4 +421,3 @@
 547	x32	pwritev2		compat_sys_pwritev64v2
 # This is the end of the legacy x32 range.  Numbers 548 and above are
 # not special and are not to be used for x32-specific syscalls.
-453	common	custom_hello		sys_custom_hello
